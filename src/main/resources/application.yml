@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+spring:
+  #数据库
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/mytest?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+  #redis
+  redis:
+    host: 192.168.24.187
+    port: 6379
+    password: 123456
+    #连接0库
+    database: 0
+
+#腾讯云短信
+sms:
+  tencent:
+    secretId: AKIDQs65nGXN4GCuXtz93lL3VgkhCRjmhb4N
+    secretKey: LSTKy1oVysruiStzzqSodEbhcZyCSTDi
+    endpoint: sms.tencentcloudapi.com
+    appid: 1400409882
+    sign: 郝敏一工作信息
+    templateID: 686278
+
